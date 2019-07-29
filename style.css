@@ -1,0 +1,32 @@
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  background-color: lightblue
+  border-style: solid;
+}
+
+body{
+  background-color: lightblue
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img{
+  height: 350px;
+  width: 350px;
+  flex-wrap: wrap;
+  align-content: center;
+  object-fit: contain;
+}
+
+h2,h1{
+  display: flex;
+  justify-content: center;
+}
